@@ -21,4 +21,4 @@ def index():
 
 		return '<b>Hello %s!</b>' % item['name'] #pulling out value for the names key
 
-bottle.run(host='localhost', port 8082)
+bottle.run(host='localhost', port=8082)

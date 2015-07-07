@@ -1,0 +1,175 @@
+2015-07-06T10:08:17.244+0100 I JOURNAL  [initandlisten] journal dir=/data/rs2/journal
+2015-07-06T10:08:17.245+0100 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-07-06T10:08:17.271+0100 I JOURNAL  [durability] Durability thread started
+2015-07-06T10:08:17.271+0100 I CONTROL  [initandlisten] MongoDB starting : pid=1681 port=27018 dbpath=/data/rs2 64-bit host=emmas-MacBook-Pro.local
+2015-07-06T10:08:17.271+0100 I JOURNAL  [journal writer] Journal writer thread started
+2015-07-06T10:08:17.271+0100 I CONTROL  [initandlisten] 
+2015-07-06T10:08:17.272+0100 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2015-07-06T10:08:17.272+0100 I CONTROL  [initandlisten] db version v3.0.4-pre-
+2015-07-06T10:08:17.272+0100 I CONTROL  [initandlisten] git version: 924b44817c97151a230835c64779961c1fb8fc01
+2015-07-06T10:08:17.272+0100 I CONTROL  [initandlisten] build info: Darwin bs-osx108-3 12.5.0 Darwin Kernel Version 12.5.0: Sun Sep 29 13:33:47 PDT 2013; root:xnu-2050.48.12~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+2015-07-06T10:08:17.272+0100 I CONTROL  [initandlisten] allocator: system
+2015-07-06T10:08:17.273+0100 I CONTROL  [initandlisten] options: { net: { port: 27018 }, processManagement: { fork: true }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "/data/rs2", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "2.log" } }
+2015-07-06T10:08:17.273+0100 I INDEX    [initandlisten] allocating new ns file /data/rs2/local.ns, filling with zeroes...
+2015-07-06T10:08:17.303+0100 I STORAGE  [FileAllocator] allocating new datafile /data/rs2/local.0, filling with zeroes...
+2015-07-06T10:08:17.303+0100 I STORAGE  [FileAllocator] creating directory /data/rs2/_tmp
+2015-07-06T10:08:17.322+0100 I STORAGE  [FileAllocator] done allocating datafile /data/rs2/local.0, size: 16MB,  took 0.018 secs
+2015-07-06T10:08:17.345+0100 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument Did not find replica set configuration document in local.system.replset
+2015-07-06T10:08:17.346+0100 I NETWORK  [initandlisten] waiting for connections on port 27018
+2015-07-06T10:13:32.970+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50244 #1 (1 connection now open)
+2015-07-06T10:13:53.678+0100 I NETWORK  [conn1] end connection 127.0.0.1:50244 (0 connections now open)
+2015-07-06T10:14:19.046+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50250 #2 (1 connection now open)
+2015-07-06T10:14:19.051+0100 I REPL     [conn2] replSetInitiate admin command received from client
+2015-07-06T10:14:19.056+0100 I REPL     [conn2] replSet replSetInitiate config object with 3 members parses ok
+2015-07-06T10:14:19.058+0100 W REPL     [ReplicationExecutor] Got error (NoReplicationEnabled not running with --replSet) response on heartbeat request to localhost:27017; { ok: 1.0, hbmsg: "" }
+2015-07-06T10:14:19.060+0100 E REPL     [conn2] replSet replSetInitiate failed; NodeNotFound replSetInitiate quorum check failed because not all proposed set members responded affirmatively: localhost:27017 failed with not running with --replSet
+2015-07-06T10:14:19.060+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50255 #3 (2 connections now open)
+2015-07-06T10:14:19.066+0100 I NETWORK  [conn2] end connection 127.0.0.1:50250 (1 connection now open)
+2015-07-06T10:14:49.082+0100 I NETWORK  [conn3] end connection 127.0.0.1:50255 (0 connections now open)
+2015-07-06T10:14:49.082+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50256 #4 (2 connections now open)
+2015-07-06T10:15:19.101+0100 I NETWORK  [conn4] end connection 127.0.0.1:50256 (0 connections now open)
+2015-07-06T10:15:19.101+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50261 #5 (2 connections now open)
+2015-07-06T10:15:34.926+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50263 #6 (2 connections now open)
+2015-07-06T10:15:34.931+0100 I REPL     [conn6] replSetInitiate admin command received from client
+2015-07-06T10:15:34.934+0100 I REPL     [conn6] replSet replSetInitiate config object with 3 members parses ok
+2015-07-06T10:15:34.935+0100 W REPL     [ReplicationExecutor] Got error (NoReplicationEnabled not running with --replSet) response on heartbeat request to localhost:27017; { ok: 1.0, hbmsg: "" }
+2015-07-06T10:15:34.935+0100 E REPL     [conn6] replSet replSetInitiate failed; NodeNotFound replSetInitiate quorum check failed because not all proposed set members responded affirmatively: localhost:27017 failed with not running with --replSet
+2015-07-06T10:15:34.938+0100 I NETWORK  [conn6] end connection 127.0.0.1:50263 (1 connection now open)
+2015-07-06T10:15:49.118+0100 I NETWORK  [conn5] end connection 127.0.0.1:50261 (0 connections now open)
+2015-07-06T10:15:49.118+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50268 #7 (2 connections now open)
+2015-07-06T10:16:19.143+0100 I NETWORK  [conn7] end connection 127.0.0.1:50268 (0 connections now open)
+2015-07-06T10:16:19.143+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50282 #8 (2 connections now open)
+2015-07-06T10:16:49.162+0100 I NETWORK  [conn8] end connection 127.0.0.1:50282 (0 connections now open)
+2015-07-06T10:16:49.163+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50283 #9 (2 connections now open)
+2015-07-06T10:17:19.180+0100 I NETWORK  [conn9] end connection 127.0.0.1:50283 (0 connections now open)
+2015-07-06T10:17:19.181+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50284 #10 (2 connections now open)
+2015-07-06T10:17:49.199+0100 I NETWORK  [conn10] end connection 127.0.0.1:50284 (0 connections now open)
+2015-07-06T10:17:49.200+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50286 #11 (2 connections now open)
+2015-07-06T10:18:19.220+0100 I NETWORK  [conn11] end connection 127.0.0.1:50286 (0 connections now open)
+2015-07-06T10:18:19.220+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50287 #12 (2 connections now open)
+2015-07-06T10:18:49.237+0100 I NETWORK  [conn12] end connection 127.0.0.1:50287 (0 connections now open)
+2015-07-06T10:18:49.237+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50291 #13 (2 connections now open)
+2015-07-06T10:19:19.256+0100 I NETWORK  [conn13] end connection 127.0.0.1:50291 (0 connections now open)
+2015-07-06T10:19:19.256+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50293 #14 (2 connections now open)
+2015-07-06T10:19:49.276+0100 I NETWORK  [conn14] end connection 127.0.0.1:50293 (0 connections now open)
+2015-07-06T10:19:49.276+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50294 #15 (2 connections now open)
+2015-07-06T10:20:19.296+0100 I NETWORK  [conn15] end connection 127.0.0.1:50294 (0 connections now open)
+2015-07-06T10:20:19.296+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50295 #16 (2 connections now open)
+2015-07-06T10:20:49.317+0100 I NETWORK  [conn16] end connection 127.0.0.1:50295 (0 connections now open)
+2015-07-06T10:20:49.318+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50296 #17 (2 connections now open)
+2015-07-06T10:21:19.338+0100 I NETWORK  [conn17] end connection 127.0.0.1:50296 (0 connections now open)
+2015-07-06T10:21:19.338+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50297 #18 (2 connections now open)
+2015-07-06T10:21:49.355+0100 I NETWORK  [conn18] end connection 127.0.0.1:50297 (0 connections now open)
+2015-07-06T10:21:49.355+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50298 #19 (2 connections now open)
+2015-07-06T10:22:19.370+0100 I NETWORK  [conn19] end connection 127.0.0.1:50298 (0 connections now open)
+2015-07-06T10:22:19.370+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50299 #20 (2 connections now open)
+2015-07-06T10:22:49.383+0100 I NETWORK  [conn20] end connection 127.0.0.1:50299 (0 connections now open)
+2015-07-06T10:22:49.383+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50301 #21 (2 connections now open)
+2015-07-06T10:23:19.397+0100 I NETWORK  [conn21] end connection 127.0.0.1:50301 (0 connections now open)
+2015-07-06T10:23:19.397+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50303 #22 (2 connections now open)
+2015-07-06T10:23:49.423+0100 I NETWORK  [conn22] end connection 127.0.0.1:50303 (0 connections now open)
+2015-07-06T10:23:49.423+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50304 #23 (2 connections now open)
+2015-07-06T10:24:19.444+0100 I NETWORK  [conn23] end connection 127.0.0.1:50304 (0 connections now open)
+2015-07-06T10:24:19.445+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50305 #24 (2 connections now open)
+2015-07-06T10:24:49.478+0100 I NETWORK  [conn24] end connection 127.0.0.1:50305 (0 connections now open)
+2015-07-06T10:24:49.478+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50313 #25 (2 connections now open)
+2015-07-06T10:25:19.506+0100 I NETWORK  [conn25] end connection 127.0.0.1:50313 (0 connections now open)
+2015-07-06T10:25:19.506+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50314 #26 (2 connections now open)
+2015-07-06T10:25:49.534+0100 I NETWORK  [conn26] end connection 127.0.0.1:50314 (0 connections now open)
+2015-07-06T10:25:49.534+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50315 #27 (2 connections now open)
+2015-07-06T10:26:19.563+0100 I NETWORK  [conn27] end connection 127.0.0.1:50315 (0 connections now open)
+2015-07-06T10:26:19.564+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50324 #28 (2 connections now open)
+2015-07-06T10:26:49.579+0100 I NETWORK  [conn28] end connection 127.0.0.1:50324 (0 connections now open)
+2015-07-06T10:26:49.579+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50325 #29 (2 connections now open)
+2015-07-06T10:27:19.610+0100 I NETWORK  [conn29] end connection 127.0.0.1:50325 (0 connections now open)
+2015-07-06T10:27:19.610+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50328 #30 (2 connections now open)
+2015-07-06T10:27:49.640+0100 I NETWORK  [conn30] end connection 127.0.0.1:50328 (0 connections now open)
+2015-07-06T10:27:49.641+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50330 #31 (2 connections now open)
+2015-07-06T10:28:19.671+0100 I NETWORK  [conn31] end connection 127.0.0.1:50330 (0 connections now open)
+2015-07-06T10:28:19.671+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50331 #32 (2 connections now open)
+2015-07-06T10:28:49.692+0100 I NETWORK  [conn32] end connection 127.0.0.1:50331 (0 connections now open)
+2015-07-06T10:28:49.692+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50332 #33 (2 connections now open)
+2015-07-06T10:29:19.711+0100 I NETWORK  [conn33] end connection 127.0.0.1:50332 (0 connections now open)
+2015-07-06T10:29:19.711+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50333 #34 (2 connections now open)
+2015-07-06T10:29:49.730+0100 I NETWORK  [conn34] end connection 127.0.0.1:50333 (0 connections now open)
+2015-07-06T10:29:49.730+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50334 #35 (2 connections now open)
+2015-07-06T10:30:19.750+0100 I NETWORK  [conn35] end connection 127.0.0.1:50334 (0 connections now open)
+2015-07-06T10:30:19.750+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50336 #36 (2 connections now open)
+2015-07-06T10:30:49.769+0100 I NETWORK  [conn36] end connection 127.0.0.1:50336 (0 connections now open)
+2015-07-06T10:30:49.769+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50337 #37 (2 connections now open)
+2015-07-06T10:31:19.794+0100 I NETWORK  [conn37] end connection 127.0.0.1:50337 (0 connections now open)
+2015-07-06T10:31:19.794+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50386 #38 (2 connections now open)
+2015-07-06T10:31:49.814+0100 I NETWORK  [conn38] end connection 127.0.0.1:50386 (0 connections now open)
+2015-07-06T10:31:49.814+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50389 #39 (2 connections now open)
+2015-07-06T10:32:19.833+0100 I NETWORK  [conn39] end connection 127.0.0.1:50389 (0 connections now open)
+2015-07-06T10:32:19.834+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50391 #40 (2 connections now open)
+2015-07-06T10:32:49.848+0100 I NETWORK  [conn40] end connection 127.0.0.1:50391 (0 connections now open)
+2015-07-06T10:32:49.848+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50403 #41 (2 connections now open)
+2015-07-06T10:33:19.862+0100 I NETWORK  [conn41] end connection 127.0.0.1:50403 (0 connections now open)
+2015-07-06T10:33:19.863+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50405 #42 (2 connections now open)
+2015-07-06T10:33:49.881+0100 I NETWORK  [conn42] end connection 127.0.0.1:50405 (0 connections now open)
+2015-07-06T10:33:49.881+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50406 #43 (2 connections now open)
+2015-07-06T10:34:19.899+0100 I NETWORK  [conn43] end connection 127.0.0.1:50406 (0 connections now open)
+2015-07-06T10:34:19.899+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50421 #44 (2 connections now open)
+2015-07-06T10:34:49.919+0100 I NETWORK  [conn44] end connection 127.0.0.1:50421 (0 connections now open)
+2015-07-06T10:34:49.920+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50426 #45 (2 connections now open)
+2015-07-06T10:35:19.950+0100 I NETWORK  [conn45] end connection 127.0.0.1:50426 (0 connections now open)
+2015-07-06T10:35:19.950+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50430 #46 (2 connections now open)
+2015-07-06T10:35:49.967+0100 I NETWORK  [conn46] end connection 127.0.0.1:50430 (0 connections now open)
+2015-07-06T10:35:49.967+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50433 #47 (2 connections now open)
+2015-07-06T10:36:19.990+0100 I NETWORK  [conn47] end connection 127.0.0.1:50433 (0 connections now open)
+2015-07-06T10:36:19.990+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50437 #48 (2 connections now open)
+2015-07-06T10:36:50.008+0100 I NETWORK  [conn48] end connection 127.0.0.1:50437 (0 connections now open)
+2015-07-06T10:36:50.008+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50441 #49 (2 connections now open)
+2015-07-06T10:37:20.031+0100 I NETWORK  [conn49] end connection 127.0.0.1:50441 (0 connections now open)
+2015-07-06T10:37:20.032+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50443 #50 (2 connections now open)
+2015-07-06T10:37:50.046+0100 I NETWORK  [conn50] end connection 127.0.0.1:50443 (0 connections now open)
+2015-07-06T10:37:50.047+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50446 #51 (2 connections now open)
+2015-07-06T10:38:20.065+0100 I NETWORK  [conn51] end connection 127.0.0.1:50446 (0 connections now open)
+2015-07-06T10:38:20.066+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50447 #52 (2 connections now open)
+2015-07-06T10:38:50.085+0100 I NETWORK  [conn52] end connection 127.0.0.1:50447 (0 connections now open)
+2015-07-06T10:38:50.085+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50448 #53 (2 connections now open)
+2015-07-06T10:39:20.105+0100 I NETWORK  [conn53] end connection 127.0.0.1:50448 (0 connections now open)
+2015-07-06T10:39:20.105+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50468 #54 (2 connections now open)
+2015-07-06T10:39:50.120+0100 I NETWORK  [conn54] end connection 127.0.0.1:50468 (0 connections now open)
+2015-07-06T10:39:50.120+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50490 #55 (2 connections now open)
+2015-07-06T10:40:20.133+0100 I NETWORK  [conn55] end connection 127.0.0.1:50490 (0 connections now open)
+2015-07-06T10:40:20.133+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50493 #56 (2 connections now open)
+2015-07-06T10:40:50.150+0100 I NETWORK  [conn56] end connection 127.0.0.1:50493 (0 connections now open)
+2015-07-06T10:40:50.150+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50520 #57 (2 connections now open)
+2015-07-06T10:41:20.171+0100 I NETWORK  [conn57] end connection 127.0.0.1:50520 (0 connections now open)
+2015-07-06T10:41:20.171+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50521 #58 (2 connections now open)
+2015-07-06T10:41:50.187+0100 I NETWORK  [conn58] end connection 127.0.0.1:50521 (0 connections now open)
+2015-07-06T10:41:50.187+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50523 #59 (2 connections now open)
+2015-07-06T10:42:20.201+0100 I NETWORK  [conn59] end connection 127.0.0.1:50523 (0 connections now open)
+2015-07-06T10:42:20.201+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50525 #60 (2 connections now open)
+2015-07-06T10:42:50.215+0100 I NETWORK  [conn60] end connection 127.0.0.1:50525 (0 connections now open)
+2015-07-06T10:42:50.215+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50527 #61 (2 connections now open)
+2015-07-06T10:43:20.234+0100 I NETWORK  [conn61] end connection 127.0.0.1:50527 (0 connections now open)
+2015-07-06T10:43:20.234+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50569 #62 (2 connections now open)
+2015-07-06T10:43:50.253+0100 I NETWORK  [conn62] end connection 127.0.0.1:50569 (0 connections now open)
+2015-07-06T10:43:50.253+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50574 #63 (2 connections now open)
+2015-07-06T10:44:20.273+0100 I NETWORK  [conn63] end connection 127.0.0.1:50574 (0 connections now open)
+2015-07-06T10:44:20.273+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50615 #64 (2 connections now open)
+2015-07-06T10:44:50.289+0100 I NETWORK  [conn64] end connection 127.0.0.1:50615 (0 connections now open)
+2015-07-06T10:44:50.289+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50616 #65 (2 connections now open)
+2015-07-06T10:45:18.961+0100 I NETWORK  [conn65] end connection 127.0.0.1:50616 (0 connections now open)
+2015-07-06T10:45:22.972+0100 I CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2015-07-06T10:45:22.973+0100 I CONTROL  [signalProcessingThread] now exiting
+2015-07-06T10:45:22.973+0100 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2015-07-06T10:45:22.973+0100 I NETWORK  [signalProcessingThread] closing listening socket: 6
+2015-07-06T10:45:22.973+0100 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2015-07-06T10:45:22.974+0100 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27018.sock
+2015-07-06T10:45:22.974+0100 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2015-07-06T10:45:22.974+0100 I NETWORK  [signalProcessingThread] shutdown: going to close sockets...
+2015-07-06T10:45:22.975+0100 I STORAGE  [signalProcessingThread] shutdown: waiting for fs preallocator...
+2015-07-06T10:45:22.975+0100 I STORAGE  [signalProcessingThread] shutdown: final commit...
+2015-07-06T10:45:22.977+0100 I JOURNAL  [signalProcessingThread] journalCleanup...
+2015-07-06T10:45:22.977+0100 I JOURNAL  [signalProcessingThread] removeJournalFiles
+2015-07-06T10:45:22.978+0100 I JOURNAL  [signalProcessingThread] Terminating durability thread ...
+2015-07-06T10:45:23.079+0100 I JOURNAL  [journal writer] Journal writer thread stopped
+2015-07-06T10:45:23.079+0100 I JOURNAL  [durability] Durability thread stopped
+2015-07-06T10:45:23.080+0100 I STORAGE  [signalProcessingThread] shutdown: closing all files...
+2015-07-06T10:45:23.081+0100 I STORAGE  [signalProcessingThread] closeAllFiles() finished
+2015-07-06T10:45:23.081+0100 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2015-07-06T10:45:23.081+0100 I CONTROL  [signalProcessingThread] dbexit:  rc: 0
